@@ -1,0 +1,69 @@
+// ==============================================
+//	The One Dark
+//	==============================================
+
+$dark-theme: true; // Set true if theme has a dark background
+
+// Import Styles
+@import 'base/theme-config';
+
+// Palette
+$base00: #141414; // black
+$base01: #2c323c;
+$base02: #373f4b;
+$base03: #3e4451;
+$base04: #5c636c;
+$base05: #7d8793;
+$base06: #abb2ba;
+$base07: #c3cbd4; // brighest grey
+$red: #df6b75; // red
+$orange: #d19965; // orange
+$yellow: #e2c08d; // yellow
+$green: #97c279; // green
+$aqua: #56b5c2; // aqua
+$blue: #61afef; // blue
+$purple: #c578dd; // purple
+$brown: #d19365; // brown
+
+// Styles
+@include styles(
+$base00, // Background
+$base01, // Background - Highlight
+$base04, // Comments / Secondary Content
+$base07, // Body text / default code / primary content / HTML attr name / CSS rule value
+$base07, // Optional emphasized content
+$base07, // CSS Properties
+$red, // CSS3 pseudo-selectors / elements
+$purple, // CSS Keywords (!important, etc.)
+$red, // HTML Tags / CSS ID/Class Selectors / JS Keywords / Current item highlight
+$green, // HTML/CSS/JS Strings
+$aqua, // CSS Tag Selectors / JS Operators (in Canary)
+$yellow  // Accent / Highlight
+);
+
+.elements {
+	::shadow {
+		.webkit-html-attribute-name {
+			color: $orange !important;
+		}
+
+		.webkit-html-attribute-value {
+			color: $green !important;
+		}
+
+		.elements-disclosure li.selected .selection,
+		.elements-disclosure ol:focus li.selected .selection {
+			background-color: $base03 !important;
+		}
+	}
+
+	.style-properties .webkit-css-property,
+	::shadow .tree-outline .webkit-css-property {
+		color: $base07 !important;
+	}
+
+	.style-properties .value,
+	::shadow .tree-outline .value {
+		color: $green !important;
+	}
+}
