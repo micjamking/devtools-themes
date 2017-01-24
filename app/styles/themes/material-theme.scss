@@ -1,0 +1,39 @@
+/* ==============================================
+   Material Theme - Based on the "Material Theme" by Mattia Astorino
+   https://github.com/equinusocio/material-theme
+   ============================================== */
+
+// Import Styles
+@import "base/theme-config";
+
+// Palette
+$base03: #263238;
+$base02: #073642;
+$base01: #586e75;
+$base00: #073642;
+$base0: #839496;
+$base1: #93a1a1;
+$yellow:  #FFCB6B;
+$orange:  #F78C6C;
+$red:     #FF5370;
+$magenta: #F07178;
+$violet:  #C792EA;
+$blue:    #B2CCD6;
+$cyan:    #89DDFF;
+$green:   #C3E88D;
+
+// Styles
+@include styles(
+    $base03, // Background
+    $base02, // Background - Highlight
+    $base01, // Comments / Secondary Content
+    $base0,  // Body text / default code / primary content
+    $base1,  // Optional emphasized content
+    $yellow, // CSS Properties
+    $orange, // CSS3 pseudo-selectors / elements
+    $red,    // CSS Keywords (!important, etc.)
+    $blue,   // HTML Tags / CSS ID/Class Selectors / JS Keywords
+    $cyan,   // HTML/CSS/JS Strings
+    $green,  // CSS Tag Selectors / JS Operators (in Canary)
+    $magenta // Accent / Highlight
+);
