@@ -1,0 +1,38 @@
+/* ==============================================
+   Theme Name
+   ============================================== */
+
+$dark-theme: true; // Set true if theme has a dark background
+
+// Import Styles
+@import "base/theme-config";
+
+// Palette
+$background: #141414;             // Background
+$background-highlight: #1B1B1B;   // Background - Highlight
+$comments: #5F5A60;               // Comments / Secondary Content
+$foreground: #F8F8F8;             // Body text / default code / primary content
+$foreground-em: #C7C7FF;          // Optional emphasized content
+$foreground-css-props: #9B859D;   // CSS Properties
+$foreground-css-pseudo: #9B703F;  // CSS3 pseudo-selectors / elements
+$keyword-css: #CC7832;            // CSS Keywords (!important, etc.)
+$keyword: #CDA869;                // HTML Tags / CSS ID/Class Selectors / JS Keywords
+$strings: #8F9D6A;                // HTML/CSS/JS Strings
+$keyword-selectors: #CDA869;      // CSS Tag Selectors / JS Operators (in Canary)
+$keyword-accent: #E9C062;         // Accent / Highlight
+
+// Styles
+@include styles(
+$background,            // Background
+$background-highlight,  // Background - Highlight
+$comments,              // Comments / Secondary Content
+$foreground,            // Body text / default code / primary content
+$foreground-em,         // Optional emphasized content
+$foreground-css-props,  // CSS Properties
+$foreground-css-pseudo, // CSS3 pseudo-selectors / elements
+$keyword-css,           // CSS Keywords (!important, etc.)
+$keyword,               // HTML Tags / CSS ID/Class Selectors / JS Keywords
+$strings,               // HTML/CSS/JS Strings
+$keyword-selectors,     // CSS Tag Selectors / JS Operators (in Canary)
+$keyword-accent         // Accent / Highlight
+);
