@@ -360,9 +360,10 @@ $accent                 // Accent / Highlight
         margin-left: 12px;
 
         .tabbed-pane-header-tab {
-          font-size: 10px;
+          font-size: 12px;
           height: 28px;
           padding: 6px 12px !important;
+          width: auto !important;
         }
       }
     }
@@ -433,7 +434,7 @@ $accent                 // Accent / Highlight
 
             .tabbed-pane-header-tab-title {
               box-sizing: content-box;
-              padding: 0 8px;
+              padding: 0;
             }
 
             &.selected {
