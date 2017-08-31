@@ -17,6 +17,8 @@ If you develop in the browser and/or use Chrome Developer Tools as your web auth
 
 After restarting DevTools, you should see the default theme *3024* take affect within the *Sources* and *Console* panels.
 
+To switch themes, go to the Author Settings tab in the DevTools window (if your window is narrow, the tab may be hidden under the `»` menu). Close and reopen the DevTools window to see your changes take effect. 
+
 ## Contributing
 [Fork the repository](../../fork) and then follow the steps below to contribute new themes or bug fixes. *Devtools Author* is built using [NodeJS](https://nodejs.org/en/) and [GruntJS](http://gruntjs.com/).
 
