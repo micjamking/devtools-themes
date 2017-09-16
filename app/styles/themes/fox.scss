@@ -1,0 +1,36 @@
+/* ==============================================
+   Fox
+   ============================================== */
+
+$dark-theme: true;
+
+// Import Styles
+@import "base/theme-config";
+
+// Palette
+$base03: #393f4c;
+$base02: #666666;
+$base01: #E7E7E7;
+$base1: #FFFFFF;
+$yellow: #FEFF01;
+$orange: #f2c764;
+$red: #f66760;
+$magenta: #d5bcfb;
+$violet: #9f8697;
+$green: #3fcf7b;
+
+// Styles
+@include styles(
+$base03,// Background
+$base02,// Background - Highlight
+$base1,// Comments / Secondary Content
+$base01,// Body text / default code / primary content
+$base1,// Optional emphasized content
+$magenta,// CSS Properties
+$orange,// CSS3 pseudo-selectors / elements
+$red,// CSS Keywords (!important, etc.)
+$green,// HTML Tags / CSS ID/Class Selectors / JS Keywords
+$violet,// HTML/CSS/JS Strings
+$violet,// CSS Tag Selectors / JS Operators (in Canary)
+$red // Accent / Highlight
+);
