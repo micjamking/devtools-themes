@@ -12,13 +12,6 @@
     top: 12px;
   }
 
-  #console-prompt::before {
-    content: "\203A";
-    font-size: 1.5em;
-    top: 6px;
-    left: -20px;
-  }
-
   .console-message > .outline-disclosure li.parent::before {
     top: 4px;
     margin-right: 4px;
